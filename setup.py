@@ -7,8 +7,9 @@ entry_points = '''
 
 setup(
     name='pygments-periwinkle-lexer',
-    version='0.0.1',
+    version='0.0.5',
     description='Лексер для Барвінку.',
+    long_description="Пакет для Pygments, який додає підсвічування синтаксису для мови програмування Барвінок",
     author='Федуняк Роман',
     author_email='fedynuak.roma@gmail.com',
     url='https://github.com/periwinkle-lang',
