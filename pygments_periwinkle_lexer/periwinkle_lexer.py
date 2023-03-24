@@ -14,7 +14,7 @@ class PeriwinkleLexer(RegexLexer):
         'root': [
             (r'//.*', Comment),
             (r'/\*', Comment.Multiline, 'multilineComment'),
-            (r'\b(друк|друклн|зчитати|Масив|Стрічка)\b', Name.Builtin),
+            (r'\b(друк|друкр|зчитати|ітератор|Число|Логічний|Стрічка|Дійсний|Масив|КінецьІтерації)\b', Name.Builtin),
             (r'(\bфункція\b)(\s*)(\b[а-яА-ЯїієґЇІЄҐ_][а-яА-ЯїієґЇІЄҐ0-9_]*\b)(?=\s*\()', bygroups(Keyword.Control, Text.Whitespace, Name.Function)),
             (r',|[.]{3}', Punctuation),
             (r'\b[а-яА-ЯїієґЇІЄҐ_][а-яА-ЯїієґЇІЄҐ0-9_]*\b(?=\()', Name.Function),
