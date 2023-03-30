@@ -12,7 +12,7 @@ class PeriwinkleLexer(RegexLexer):
 
     tokens = {
         'root': [
-            (r'\A#!.*$', Comment.Hashbang),
+            (r'\A#!.*', Comment.Hashbang),
             (r'//.*', Comment),
             (r'/\*', Comment.Multiline, 'multilineComment'),
             (r'\b(друк|друкр|зчитати|ітератор|Число|Логічний|Стрічка|Дійсний|Масив|КінецьІтерації)\b', Name.Builtin),
